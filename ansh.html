@@ -15,9 +15,7 @@
             <button type="submit">Generate Table</button>
         </form>
         
-        <table id="numberTable">
-            <!-- The table will be populated by JavaScript -->
-        </table>
+        <table id="numberTable"></table>
     </div>
 
     <script>
@@ -31,7 +29,7 @@
 
         function generateTable(number) {
             const table = document.getElementById("numberTable");
-            table.innerHTML = ''; // Clear previous table
+            table.innerHTML = '';
             const headerRow = document.createElement("tr");
             const header = document.createElement("th");
             header.colSpan = 2;
